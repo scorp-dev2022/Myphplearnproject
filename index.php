@@ -42,7 +42,7 @@ $filmler = [
     <title>Blog App</title>
 </head>
 <body>
-    
+    <h1>Deneme</h1>
     <div class="container my-5">
     
         <div class="row">

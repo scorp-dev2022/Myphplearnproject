@@ -28,6 +28,15 @@ $filmler = [
     "Yorum" => 350,
     "Begeni" => 500,
     "VizyondaMi" => 1
+  ],
+  "Üçüncü film" =>[
+    "resim" => 3,
+    "Baslik" => "Lucifer",
+    "Ozet" => "İnsanlar ve iblisler arasındaki zorlu mücadeleye tanık olun",
+    "Tarih" => "12.10.2015",
+    "Yorum" => 120,
+    "Begeni" => 390,
+    "VizyondaMi" => 1
   ]
 ];
 ?>
@@ -42,7 +51,7 @@ $filmler = [
     <title>Blog App</title>
 </head>
 <body>
-    <h1>Deneme</h1>
+
     <div class="container my-5">
     
         <div class="row">
@@ -61,10 +70,13 @@ $filmler = [
 
               
                       <?php 
+                    
+                      shuffle($filmler); // rasgele sıralama yapar
                       foreach($filmler as $film){
                        
                         $FilmOzet = substr(ucfirst($film["Ozet"]),0,70)."...";
                         if($film["VizyondaMi"] == 1){
+                          $film["VizyondaMi"] = "Vizyonda";
                            echo "<div class='card mb-3'>
                                  <div class='row'>
                                      <div class='col-3'><img class='img-fluid' src='img/{$film['resim']}.jpeg' alt=''>

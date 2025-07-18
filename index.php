@@ -1,56 +1,35 @@
 <?php
-
-$katagoriler = [
-["Macera"],
-["Dram"],
-["Komedi"],
-["Korku"],
-["Gerilim"]
-];
-
-$filmler = [
-
-  "ilk film"=> [
-    "resim" => 1,
-    "Baslik" => "Paper Lives",
-    "Ozet" => "kağıt toplayarak geçinen ve sağlığı giderek kötüleşen Mehmet terk edilmiş bir çocuk bulur. Birden hayatına giren küçük Ali, onu kendi çocukluğuyla yüzleştirecektir. (18 yaş ve üzeri için uygundur)",
-    "Tarih" => "12.10.2002",
-    "Yorum" => 100,
-    "Begeni" => 150,
-    "VizyondaMi" => 1
-  ],
-
-  "ikinci film" =>[
-    "resim" => 2,
-    "Baslik" => "Walking Dead",
-    "Ozet" => "zombi kıyametinin ardından hayatta kalanlar, birlikte verdikleri ölüm kalım mücadelesinde insanlığa karşı duydukları umuda tutunur.",
-    "Tarih" => "12.10.2015",
-    "Yorum" => 350,
-    "Begeni" => 500,
-    "VizyondaMi" => 1
-  ],
-  "Üçüncü film" =>[
-    "resim" => 3,
-    "Baslik" => "Lucifer",
-    "Ozet" => "İnsanlar ve iblisler arasındaki zorlu mücadeleye tanık olun",
-    "Tarih" => "12.10.2015",
-    "Yorum" => 120,
-    "Begeni" => 390,
-    "VizyondaMi" => 1
-  ]
-];
+include '_values.php';
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>Blog App</title>
-</head>
-<body>
+<?php
+$yenifilmler = [];
+
+if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['mesaj'])) {
+  $deger = strtolower(trim($_GET['mesaj'])); // Küçük harfe çevir ve boşlukları temizle
+
+  foreach ($filmler as $film) {
+    if (strpos(strtolower($film["Baslik"]), $deger) !== false) {
+      $yenifilmler[] = $film;
+    }
+  }
+
+  // Eğer eşleşen yoksa, bilgi ver
+  if (empty($yenifilmler)) {
+    echo "Aradığınız kriterlere uygun film bulunamadı.";
+  } else {
+    $filmler = $yenifilmler;
+  }
+}
+?>
+
+
+
+
+ <!-- navbar tanımlaması -->
+   <?php
+   require_once "_navbar.php";
+   ?>
 
     <div class="container my-5">
     
@@ -110,7 +89,8 @@ $filmler = [
     
     </div>
 
+<!-- footer tanımlaması -->
+   <?php
+   require_once "_footer.php";
+   ?>
 
-
-</body>
-</html>

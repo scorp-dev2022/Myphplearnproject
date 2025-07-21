@@ -4,7 +4,6 @@ include '_values.php';
 ?>
 <?php
 if(isset($_POST['upload']) && $_POST['upload'] == "upload"){
-    print_r($_FILES);
 $name = $_FILES['uploadedfile']['name'];
 $tmpname = $_FILES['uploadedfile']['tmp_name'];
 $newpath='./img/';

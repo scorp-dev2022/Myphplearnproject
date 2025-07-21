@@ -1,0 +1,188 @@
+[2025-07-17 21:02:36] [Veritabanı bağlantısı] PDO Object
+(
+)
+
+[2025-07-17 21:02:36] [POST Verisi] Array
+(
+    [id] => 2
+    [baslik] => lucyas
+    [aciklama] => <p>acslucy a&ccedil;ıklamavds</p>
+
+    [url] => lucyr ww
+    [durum] => 0
+)
+
+[2025-07-17 21:02:36] [FILES Verisi] Array
+(
+    [images] => Array
+        (
+            [name] => Array
+                (
+                    [0] => dark.jpg
+                )
+
+            [full_path] => Array
+                (
+                    [0] => dark.jpg
+                )
+
+            [type] => Array
+                (
+                    [0] => image/jpeg
+                )
+
+            [tmp_name] => Array
+                (
+                    [0] => C:\xampp\tmp\phpD724.tmp
+                )
+
+            [error] => Array
+                (
+                    [0] => 0
+                )
+
+            [size] => Array
+                (
+                    [0] => 274496
+                )
+
+        )
+
+)
+
+[2025-07-17 21:02:36] [Mevcut Görsel URL] Array
+(
+    [imageUrl] => ./img/2.jpeg
+)
+
+[2025-07-17 21:02:36] [Yüklenen Yeni Görseller] Array
+(
+    [0] => ../img/dark.jpg
+)
+
+[2025-07-17 21:04:52] [Veritabanı bağlantısı] PDO Object
+(
+)
+
+[2025-07-17 21:04:52] [POST Verisi] Array
+(
+    [id] => 2
+    [baslik] => lucy
+    [aciklama] => <p><strong>lucy</strong> a&ccedil;ıklama</p>
+
+    [url] => lucy link
+    [durum] => 0
+)
+
+[2025-07-17 21:04:52] [FILES Verisi] Array
+(
+    [images] => Array
+        (
+            [name] => Array
+                (
+                    [0] => Adsız tasarım (1).png
+                )
+
+            [full_path] => Array
+                (
+                    [0] => Adsız tasarım (1).png
+                )
+
+            [type] => Array
+                (
+                    [0] => image/png
+                )
+
+            [tmp_name] => Array
+                (
+                    [0] => C:\xampp\tmp\phpEC88.tmp
+                )
+
+            [error] => Array
+                (
+                    [0] => 0
+                )
+
+            [size] => Array
+                (
+                    [0] => 35805
+                )
+
+        )
+
+)
+
+[2025-07-17 21:04:52] [Mevcut Görsel URL] Array
+(
+    [imageUrl] => ../img/dark.jpg
+)
+
+[2025-07-17 21:04:52] [Eski görsel silindi] ../img/dark.jpg
+[2025-07-17 21:04:52] [Yüklenen Yeni Görseller] Array
+(
+    [0] => ../img/Adsız tasarım (1).png
+)
+
+[2025-07-17 21:12:29] [Veritabanı bağlantısı] PDO Object
+(
+)
+
+[2025-07-17 21:12:29] [POST Verisi] Array
+(
+    [id] => 2
+    [baslik] => lucy yeni
+    [aciklama] => <p><strong>lucy a&ccedil;ıklama</strong></p>
+
+    [url] => lucy link
+    [durum] => 0
+)
+
+[2025-07-17 21:12:29] [FILES Verisi] Array
+(
+    [images] => Array
+        (
+            [name] => Array
+                (
+                    [0] => Ekran görüntüsü 2025-06-12 223928.png
+                )
+
+            [full_path] => Array
+                (
+                    [0] => Ekran görüntüsü 2025-06-12 223928.png
+                )
+
+            [type] => Array
+                (
+                    [0] => image/png
+                )
+
+            [tmp_name] => Array
+                (
+                    [0] => C:\xampp\tmp\phpE515.tmp
+                )
+
+            [error] => Array
+                (
+                    [0] => 0
+                )
+
+            [size] => Array
+                (
+                    [0] => 40668
+                )
+
+        )
+
+)
+
+[2025-07-17 21:12:29] [Mevcut Görsel URL] Array
+(
+    [imageUrl] => ../img/Adsız tasarım (1).png
+)
+
+[2025-07-17 21:12:29] [Eski görsel silindi] ../img/Adsız tasarım (1).png
+[2025-07-17 21:12:29] [Yüklenen Yeni Görseller] Array
+(
+    [0] => ../img/Ekran görüntüsü 2025-06-12 223928.png
+)
+
